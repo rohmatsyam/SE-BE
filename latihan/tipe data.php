@@ -49,7 +49,7 @@
         echo "c modulus 10 = $c";        
     ?>
     <hr>
-    <h2>Penugasan</h2>
+    <h2>Inc & Dec</h2>
     <?php $d=10;    
     echo "D adalah $d";
     $d++;
