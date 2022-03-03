@@ -19,7 +19,7 @@
 <hr>
 <h1>Kondisi Mobil</h1>
 <?php $mesin="bagus";$body="bagus";?>
-<?php if($mesin=="bagus" && $bodyb="bagus") : ?>
+<?php if($mesin=="bagus" && $body="bagus") : ?>
     <h2>Mesin bagus and body bagus</h2>
     <?php elseif($mesin="bagus" || $body="bagus"): ?>
         <h2>Mesin bagus or body bagus</h2>
