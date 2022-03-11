@@ -2,6 +2,7 @@
 class Robot
 {
     private $warnaKepala, $warnaBadan, $warnaKaki, $jSenjata;
+    # dijalankan saat inisialisasi object
     public function __construct($warnaKepala, $warnaBadan, $warnaKaki, $jSenjata)
     {
         $this->warnaKepala = $warnaKepala;
@@ -12,7 +13,7 @@ class Robot
 
     public function getWarnaBadan()
     {
-        echo $this->warnaKepala . " " . $this->warnaBadan . " " . $this->warnaKaki . " " . $this->jSenjata;
+        return $this->warnaKepala . " " . $this->warnaBadan . " " . $this->warnaKaki . " " . $this->jSenjata;
     }
     public function changeWarnaBadan($warnaBadan, $warnaKaki, $jSenjata)
     {
@@ -22,8 +23,8 @@ class Robot
     }
 }
 
-$robot = new Robot("Merah", "Biru", "Kuning", 3);
-$robot->getWarnaBadan();
+$robot = new Robot("Merah", "Biru", "Kuning", 10);
+echo $robot->getWarnaBadan();
 $robot->changeWarnaBadan("Hijau", "Putih", 2);
 echo "<br>";
-$robot->getWarnaBadan();
+echo $robot->getWarnaBadan();
