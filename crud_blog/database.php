@@ -64,6 +64,4 @@ class database{
 
 		return $data;
     }
-} 
-
-?>
+}
